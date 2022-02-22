@@ -46,7 +46,7 @@ npm run dev
 
 ### Configuration
 
-To deploy to Polygon test or main networks, update the configurations located in __hardhat.config.js__ to use a private key and, optionally, deploy to a private RPC like Infura.
+To deploy to Ropsten test networks, update the configurations located in __hardhat.config.js__ to use a private key and, optionally, deploy to a private RPC like Infura.
 URL: 
 ```javascript
 require("@nomiclabs/hardhat-waffle");
