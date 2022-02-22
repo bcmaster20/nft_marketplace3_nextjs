@@ -12,9 +12,13 @@ async function main() {
   await nft.deployed();
   console.log("nft deployed to:", nft.address);
 
+  const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
+
+
   let config = `
   export const nftmarketaddress = "${nftMarket.address}"
   export const nftaddress = "${nft.address}"
+  export const rpcEndpoint = "https://ropsten.infura.io/v3/${infuraId}"
   `
 
   let data = JSON.stringify(config)

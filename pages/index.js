@@ -4,17 +4,11 @@ import axios from 'axios'
 import Web3Modal from "web3modal"
 
 import {
-  nftaddress, nftmarketaddress
+  nftaddress, nftmarketaddress, rpcEndpoint
 } from '../config'
 
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
 import Market from '../artifacts/contracts/Market.sol/NFTMarket.json'
-
-let rpcEndpoint = ""; 
-
-if (process.env.NEXT_PUBLIC_WORKSPACE_URL) {
-  rpcEndpoint = process.env.NEXT_PUBLIC_WORKSPACE_URL
-}
 
 export default function Home() {
   const [nfts, setNfts] = useState([])
