@@ -31,7 +31,7 @@ npx hardhat node
 ```sh
 npx hardhat run scripts/deploy.js --network ropsten
 ```
-It's created config/js
+It's created config.js
 ```sh
   export const nftmarketaddress = "${nftMarket.address}"
   export const nftaddress = "${nft.address}"
