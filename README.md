@@ -10,7 +10,7 @@ To run this project locally, follow these steps.
 ```sh
 git clone https://github.com/jaylee923/nft_marketplace3_nextjs.git
 
-cd polygon-ethereum-nextjs-marketplace
+cd nft_marketplace3_nextjs
 
 # install using NPM or Yarn
 npm install
